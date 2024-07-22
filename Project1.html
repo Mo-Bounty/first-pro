@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="للبحث وادارة الملفات">
+    <title> My First Project </title>
+    <link rel="stylesheet" href="1.CSS" />
+</head>
+<body> 
+
+  <!-- broject -->
+  <div class="cruds">
+
+  <!-- 1 == head -->
+  <div class="head">
+  <h1> CRUDS </h1>
+  <p> PRODUCT MANAGEMENT SYSTEM </p>
+  </div>
+
+  <!-- 2 == section -->
+
+  <div clas="input"> 
+
+      <input type="text" placeholder="title" id="title">
+      <input onkeyup="gettotal()" type="number" placeholder="price" id="price"> 
+      <input onkeyup="gettotal()" type="number" placeholder="taxes" id="taxes"> 
+      <input onkeyup="gettotal()" type="number" placeholder="ads" id="ads"> 
+      <input onkeyup="gettotal()" type="number" placeholder="discount" id="discount"> 
+      <small id="total">  </small>
+    <input type="number" id="count" placeholder="count">
+    <input type="text" placeholder="category" id="category">
+    <button id="create"> create </button>
+
+  </div>
+
+<!-- 3 == output -->
+
+
+  <div class="output">
+
+    <input onkeyup="searchData(this.value)" type="search" placeholder="search" id="search"> 
+    <button onclick="SearchBy(this.id)" id="search-by-title"> Search-By-Title </button>
+    <button onclick="SearchBy(this.id)" id="search-by-category"> Search-By-Category </button>
+    <div id="deleteAll"> </div>
+
+    <table> 
+
+      <tr>
+      <th> ID </th>
+      <th> TITLE</th>
+      <th> PRICE </th>
+      <th> TAXES </th>
+      <th> ADS </th>
+      <th> DISCOUNT </th>
+      <th> TOTAL </th>
+      <th> CATEGORY </th>
+      <th> UPDATE </th>
+      <th> DELETE </th>
+    </tr>
+    <tbody id="tbody"> 
+    
+      </tbody>
+
+      </table>
+      </div>
+
+
+  <script src="1.JS"> </script>
+</body>
+</html>
